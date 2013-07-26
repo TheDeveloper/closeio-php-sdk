@@ -11,13 +11,13 @@ require('closeio-php-sdk/lib/Closeio.php');
 $lead_data = new StdClass();
 $lead_data->name = "Test User";
 
-$lead = new closeio\Lead();
+$lead = new Closeio\Lead();
 $lead_data = new StdClass();
 $lead_data->name = "Test D00d3";
 $result = $lead->create($lead_data);
 
 $lead_id = $result->id;
-$lead = new closeio\Lead($lead_id);
+$lead = new Closeio\Lead($lead_id);
 
 $update = new StdClass();
 $update->name = 'Test Dood Updated';
@@ -25,3 +25,9 @@ $result = $lead->update($update);
 
 $result = $lead->delete();
 ```
+
+## TODO
+
+Currently, only the leads route of the API has been implemented.
+
+It is easy to add other API routes to the SDK. Have a look at the [Leads](lib/routes/Leads.php) class to see how this is done. PR's welcome :)

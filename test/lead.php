@@ -12,13 +12,13 @@ require(__DIR__ . '/../lib/Closeio.php');
 $lead_data = new StdClass();
 $lead_data->name = "Test User";
 
-$lead = new closeio\Lead();
+$lead = new Closeio\Lead();
 $lead_data = new StdClass();
 $lead_data->name = "Test D00d3";
 $result = $lead->create($lead_data);
 
 $lead_id = $result->id;
-$lead = new closeio\Lead($lead_id);
+$lead = new Closeio\Lead($lead_id);
 
 $update = new StdClass();
 $update->name = 'Test Dood Updated';
