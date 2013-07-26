@@ -30,4 +30,4 @@ $result = $lead->delete();
 
 Currently, only the leads route of the API has been implemented.
 
-It is easy to add other API routes to the SDK. Have a look at the [Leads](tree/master/lib/routes/Lead.php) class to see how this is done. PR's welcome :)
+It is easy to add other API routes to the SDK. Have a look at the [Leads](https://github.com/TheDeveloper/closeio-php-sdk/blob/master/lib/routes/Lead.php) class to see how this is done. PR's welcome :)
