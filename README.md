@@ -6,6 +6,10 @@ Very simple PHP SDK for [Close.io's](http://close.io) REST API
 ## Usage
 
 ```php
+define('CLOSEIO_DEBUG', true);
+// Define CLOSEIO_API_KEY in your env or place as the value here
+define('CLOSEIO_API_KEY', getenv('CLOSEIO_API_KEY'));
+
 require('closeio-php-sdk/lib/Closeio.php');
 
 $lead_data = new StdClass();
