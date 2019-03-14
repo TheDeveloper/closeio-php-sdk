@@ -13,7 +13,7 @@ require(dirname(__FILE__).'/Methods.php');
 require(dirname(__FILE__).'/routes/Lead.php');
 
 define('CLOSEIO_TRANSPORT_PROTOCOL', 'https');
-define('CLOSEIO_HOST', 'app.close.io/api/v1');
+define('CLOSEIO_HOST', 'api.close.com/api/v1');
 if(!defined('CLOSEIO_DEBUG')){
   define('CLOSEIO_DEBUG', false);
 }
